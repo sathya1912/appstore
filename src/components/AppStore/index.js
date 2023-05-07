@@ -319,10 +319,10 @@ class AppStore extends Component {
     return filteredApps
   }
 
-  getsearchResults = () => {
+  getSearchResults = () => {
     const {searchInput} = this.state
     const searchResults = appsList.filter(eachApp =>
-      eachApp.appName.toLowercase().includes(searchInput.toLowerCase()),
+      eachApp.appName.toLowerCase().includes(searchInput.toLowerCase()),
     )
     return searchResults
   }
